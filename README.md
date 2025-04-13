@@ -50,7 +50,7 @@ The requirements.txt file includes the following packages:
 
 Ensure you have the appropriate model files (e.g., flood prediction model) and place them in the model/ directory.
 
-**Usage**
+###Usage
 1. Run the application:
 
 streamlit run system.py
@@ -59,19 +59,19 @@ streamlit run system.py
 
 Features Breakdown
 
-**Submit Report**
+###Submit Report
 
   -Users can submit their flood reports, including the location, severity, an optional photo, and description.
 
   -Submitted reports are saved to a CSV file (disaster_reports.csv) for further analysis.
 
-**Statistics Dashboard**
+###Statistics Dashboard
 
   -The dashboard displays flood report statistics such as the number of reports by severity and location.
 
   -It also shows a timeline of reports over time.
 
-**Community Gallery**
+###Community Gallery
 
   -The gallery displays images uploaded by users, showcasing the community's flood report submissions.
 
