@@ -50,7 +50,7 @@ The requirements.txt file includes the following packages:
 
 Ensure you have the appropriate model files (e.g., flood prediction model) and place them in the model/ directory.
 
-Usage
+**Usage**
 1. Run the application:
 
 streamlit run system.py
@@ -59,45 +59,45 @@ streamlit run system.py
 
 Features Breakdown
 
-Submit Report
+**Submit Report**
 
   -Users can submit their flood reports, including the location, severity, an optional photo, and description.
 
   -Submitted reports are saved to a CSV file (disaster_reports.csv) for further analysis.
 
-Statistics Dashboard
+**Statistics Dashboard**
 
   -The dashboard displays flood report statistics such as the number of reports by severity and location.
 
   -It also shows a timeline of reports over time.
 
-Community Gallery
+**Community Gallery**
 
   -The gallery displays images uploaded by users, showcasing the community's flood report submissions.
 
   -Users can browse through the gallery, view images, and delete photos if needed.
 
-Heatmap
+**Heatmap**
 
   -The heatmap visualizes the geographic distribution of flood reports, with intensity based on the severity of the floods.
 
-RAG Chat
+**RAG Chat**
 
   -The RAG (Retrieval-Augmented Generation) chat allows users to ask questions about the flood data (e.g., "Which locations had severe floods?").
 
   -It leverages LangChain and language models for processing the questions and providing answers.
 
-Flood Risk Prediction
+**Flood Risk Prediction**
 
   -Based on weather data (e.g., rainfall forecasts), the system predicts the likelihood of flooding in specific locations.
 
   -The system uses a pre-trained flood prediction model to make predictions based on simulated water levels and alerts the user via Telegram.
 
-Example of Telegram Alert
+**Example of Telegram Alert**
 
   -When a high flood risk is predicted, a Telegram notification will be sent to the designated chat group, alerting the users to take precautionary measures.
 
-Technologies Used
+**Technologies Used**
 
   -Streamlit: Web framework for building interactive data applications.
 
@@ -111,15 +111,15 @@ Technologies Used
 
   -Plotly: For interactive data visualizations.
 
-Contributing
+**Contributing**
 
   -Feel free to fork the repository and submit pull requests with improvements or new features. If you encounter any issues or bugs, please open an issue, and I will address them as soon as possible.
 
-License
+**License**
 
   -This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
+**Acknowledgments**
 
   -Special thanks to LangChain and Hugging Face for providing the libraries and models.
 
