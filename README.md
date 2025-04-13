@@ -24,29 +24,29 @@ The system also supports real-time flood data analysis, with the help of languag
 
 Install the required dependencies:
 
-bash
-复制
-编辑
-pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
+  cd CodeFusion_Hackathon
+  ```
 The requirements.txt file includes the following packages:
 
-streamlit: For building the web interface.
+  -streamlit: For building the web interface.
 
-pandas: For handling data operations.
+  -pandas: For handling data operations.
 
-plotly: For generating interactive visualizations.
+  -plotly: For generating interactive visualizations.
 
-pydeck: For displaying maps.
+  -pydeck: For displaying maps.
 
-joblib: For loading pre-trained machine learning models.
+  -joblib: For loading pre-trained machine learning models.
 
-requests: For making API requests (e.g., weather data).
+  -requests: For making API requests (e.g., weather data).
 
-langchain: For integrating language models and vector search.
+  -langchain: For integrating language models and vector search.
 
-transformers: For working with pre-trained language models.
+  -transformers: For working with pre-trained language models.
 
-chromadb: For vector database storage.
+  -chromadb: For vector database storage.
 
 Ensure you have the appropriate model files (e.g., flood prediction model) and place them in the model/ directory.
 
@@ -60,37 +60,45 @@ streamlit run system.py
 Features Breakdown
 
 Submit Report
+
   -Users can submit their flood reports, including the location, severity, an optional photo, and description.
 
   -Submitted reports are saved to a CSV file (disaster_reports.csv) for further analysis.
 
 Statistics Dashboard
+
   -The dashboard displays flood report statistics such as the number of reports by severity and location.
 
   -It also shows a timeline of reports over time.
 
 Community Gallery
+
   -The gallery displays images uploaded by users, showcasing the community's flood report submissions.
 
   -Users can browse through the gallery, view images, and delete photos if needed.
 
 Heatmap
+
   -The heatmap visualizes the geographic distribution of flood reports, with intensity based on the severity of the floods.
 
 RAG Chat
+
   -The RAG (Retrieval-Augmented Generation) chat allows users to ask questions about the flood data (e.g., "Which locations had severe floods?").
 
   -It leverages LangChain and language models for processing the questions and providing answers.
 
 Flood Risk Prediction
+
   -Based on weather data (e.g., rainfall forecasts), the system predicts the likelihood of flooding in specific locations.
 
   -The system uses a pre-trained flood prediction model to make predictions based on simulated water levels and alerts the user via Telegram.
 
 Example of Telegram Alert
+
   -When a high flood risk is predicted, a Telegram notification will be sent to the designated chat group, alerting the users to take precautionary measures.
 
 Technologies Used
+
   -Streamlit: Web framework for building interactive data applications.
 
   -LangChain: Library for integrating language models with data retrieval.
@@ -104,12 +112,15 @@ Technologies Used
   -Plotly: For interactive data visualizations.
 
 Contributing
+
   -Feel free to fork the repository and submit pull requests with improvements or new features. If you encounter any issues or bugs, please open an issue, and I will address them as soon as possible.
 
 License
+
   -This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgments
+
   -Special thanks to LangChain and Hugging Face for providing the libraries and models.
 
 Thanks to the developers of Streamlit, Plotly, Chroma, and PyDeck for their contributions to making the application more powerful.
