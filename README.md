@@ -51,67 +51,66 @@ chromadb: For vector database storage.
 Ensure you have the appropriate model files (e.g., flood prediction model) and place them in the model/ directory.
 
 Usage
-Run the application:
+1. Run the application:
 
-bash
-复制
-编辑
 streamlit run system.py
-The application will start and be accessible at http://localhost:8501 in your browser.
+
+2. The application will start and be accessible at http://localhost:8501 in your browser.
 
 Features Breakdown
-Submit Report
-Users can submit their flood reports, including the location, severity, an optional photo, and description.
 
-Submitted reports are saved to a CSV file (disaster_reports.csv) for further analysis.
+Submit Report
+  -Users can submit their flood reports, including the location, severity, an optional photo, and description.
+
+  -Submitted reports are saved to a CSV file (disaster_reports.csv) for further analysis.
 
 Statistics Dashboard
-The dashboard displays flood report statistics such as the number of reports by severity and location.
+  -The dashboard displays flood report statistics such as the number of reports by severity and location.
 
-It also shows a timeline of reports over time.
+  -It also shows a timeline of reports over time.
 
 Community Gallery
-The gallery displays images uploaded by users, showcasing the community's flood report submissions.
+  -The gallery displays images uploaded by users, showcasing the community's flood report submissions.
 
-Users can browse through the gallery, view images, and delete photos if needed.
+  -Users can browse through the gallery, view images, and delete photos if needed.
 
 Heatmap
-The heatmap visualizes the geographic distribution of flood reports, with intensity based on the severity of the floods.
+  -The heatmap visualizes the geographic distribution of flood reports, with intensity based on the severity of the floods.
 
 RAG Chat
-The RAG (Retrieval-Augmented Generation) chat allows users to ask questions about the flood data (e.g., "Which locations had severe floods?").
+  -The RAG (Retrieval-Augmented Generation) chat allows users to ask questions about the flood data (e.g., "Which locations had severe floods?").
 
-It leverages LangChain and language models for processing the questions and providing answers.
+  -It leverages LangChain and language models for processing the questions and providing answers.
 
 Flood Risk Prediction
-Based on weather data (e.g., rainfall forecasts), the system predicts the likelihood of flooding in specific locations.
+  -Based on weather data (e.g., rainfall forecasts), the system predicts the likelihood of flooding in specific locations.
 
-The system uses a pre-trained flood prediction model to make predictions based on simulated water levels and alerts the user via Telegram.
+  -The system uses a pre-trained flood prediction model to make predictions based on simulated water levels and alerts the user via Telegram.
 
 Example of Telegram Alert
-When a high flood risk is predicted, a Telegram notification will be sent to the designated chat group, alerting the users to take precautionary measures.
+  -When a high flood risk is predicted, a Telegram notification will be sent to the designated chat group, alerting the users to take precautionary measures.
 
 Technologies Used
-Streamlit: Web framework for building interactive data applications.
+  -Streamlit: Web framework for building interactive data applications.
 
-LangChain: Library for integrating language models with data retrieval.
+  -LangChain: Library for integrating language models with data retrieval.
 
-Chroma: Vector database for storing and retrieving document embeddings.
+  -Chroma: Vector database for storing and retrieving document embeddings.
 
-Transformers: Library by Hugging Face for using pre-trained language models.
+  -Transformers: Library by Hugging Face for using pre-trained language models.
 
-PyDeck: For map visualizations (heatmaps).
+  -PyDeck: For map visualizations (heatmaps).
 
-Plotly: For interactive data visualizations.
+  -Plotly: For interactive data visualizations.
 
 Contributing
-Feel free to fork the repository and submit pull requests with improvements or new features. If you encounter any issues or bugs, please open an issue, and I will address them as soon as possible.
+  -Feel free to fork the repository and submit pull requests with improvements or new features. If you encounter any issues or bugs, please open an issue, and I will address them as soon as possible.
 
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+  -This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgments
-Special thanks to LangChain and Hugging Face for providing the libraries and models.
+  -Special thanks to LangChain and Hugging Face for providing the libraries and models.
 
 Thanks to the developers of Streamlit, Plotly, Chroma, and PyDeck for their contributions to making the application more powerful.
 
